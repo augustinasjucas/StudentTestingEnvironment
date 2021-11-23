@@ -19,4 +19,4 @@ A student can:
 2. Solve the test in the given period of time.
 
 ### Screenshots
-![](/Screenshots/1.png?raw=true "Optional Title")
+![](Screenshots/1.png?raw=true "Optional Title")
