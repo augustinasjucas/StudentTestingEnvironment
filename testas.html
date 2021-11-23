@@ -12,7 +12,8 @@
 
 	<div class="MenuDiv">
 		<div id="MenuHolder" class="MenuHolder"></div>
-		<div class="DatabaseLink"><a href="klausimai">Duomenų bazė</a></div>
+		<!-- <div class="DatabaseLink"><a href="klausimai">Duomenų bazė</a></div> -->
+		<div class="DatabaseLink"><a href="klausimai">Database</a></div>
 	</div>
 
 	<div class="AllTestsDataHolder" id="AllTestsDataHolder">
@@ -21,9 +22,12 @@
 		<div class="FullQuestions">
 			<div class="TestQuestionsHolder" id="TestQuestionsHolder"></div>
 			<div class="BothButtons">
-				<button class="CreationButton" onClick="CreateNewClosedQuestion()">Pridėti uždarą klausimą</button>
+				<!-- <button class="CreationButton" onClick="CreateNewClosedQuestion()">Pridėti uždarą klausimą</button>
 				<button class="CreationButton" onClick="CreateNewOpenQuestion()">Pridėti atvirą klausimą</button>
-				<button class="CreationButton" onClick="CreateNewMultipleQuestion()">Pridėti klausimą su daug variantų</button>
+				<button class="CreationButton" onClick="CreateNewMultipleQuestion()">Pridėti klausimą su daug variantų</button> -->
+				<button class="CreationButton" onClick="CreateNewClosedQuestion()">Add one choice question</button>
+				<button class="CreationButton" onClick="CreateNewOpenQuestion()">Add an open-ended question</button>
+				<button class="CreationButton" onClick="CreateNewMultipleQuestion()">Add a multiple choice question</button>
 			</div>
 			<div id="FullDatabaseQuestionsHolder">
 				<div id="Link"><button id="ShowAllQuestionsMark" class="ShowAllQuestionsMark" onclick="GetAllQuestions()">Rodyti visus klausimus <span id="Arrow" class="Arrow">↓</span></button></div>

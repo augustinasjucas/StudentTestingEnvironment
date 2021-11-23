@@ -1,6 +1,7 @@
 var socket = io.connect();
 
 var Dictionary = {};
+/** Lithuanian:
 Dictionary['BadMultipleTest'] = 'Neteisingas klausimas su keliais variantais';
 Dictionary['BadClosedTest'] = 'Neteisingas uždaras klausimas';
 Dictionary['BadOpenTest'] = 'Neteisingas atviras klausimas';
@@ -50,6 +51,56 @@ Dictionary['QuestionType'] = 'Klausimo tipas';
 Dictionary['CorrectAnswer'] = 'Teisingas atsakymas';
 Dictionary['ChosenAnswer'] = 'Pasirinktas atsakymas';
 Dictionary['Sent'] = 'Išsiųsta';
+*/
+Dictionary['BadMultipleTest'] = 'Incorrect multiple choice question';
+Dictionary['BadClosedTest'] = 'Incorrect one choice question';
+Dictionary['BadOpenTest'] = 'Incorrect open-ended question';
+Dictionary['WrongCredentials'] = 'Incorrect username or password'
+Dictionary['NoCorrectAnswers'] = 'No correct answers were provided';
+Dictionary['Multiple'] = 'Multiple choices'
+Dictionary['Closed'] = 'Closed';
+Dictionary['Open'] = 'Open';
+Dictionary['NoNeedToOverview'] = 'Not neccessary to review';
+Dictionary['NeedToOverview'] = 'Neccesary to review';
+Dictionary['CorrectAnswers'] = 'Correct answers';
+Dictionary['Name'] = 'Name';
+Dictionary['Result'] = 'Result';
+Dictionary['Status'] = 'Status';
+Dictionary['Options'] = 'Options';
+Dictionary['Select'] = 'Select';
+Dictionary['ViewAnswers'] = 'View answers';
+Dictionary['QuestionIsOpen'] = 'The question is open';
+Dictionary['EditQuestion'] = 'Edit question';
+Dictionary['Send'] = 'Sed';
+Dictionary['Unspecified'] = 'Unspecified';
+Dictionary['Question'] = 'Question';
+Dictionary['ChoosingOptions'] = 'Possible choices';
+Dictionary['Answer'] = 'Answer';
+Dictionary['Subject'] = 'Subject';
+Dictionary['Functions'] = 'Functions';
+Dictionary['TestName'] = 'Test name';
+Dictionary['ToUpdateQuestion'] = 'Update question';
+Dictionary['ToRemoveQuestion'] = 'Remove question';
+Dictionary['DeleteTest'] = 'Delete BadOpenTest';
+Dictionary['QuestionIsOpen'] = 'The question is open-ended';
+Dictionary['Save'] = 'Save';
+Dictionary['ChooseTest'] = 'Choose';
+Dictionary['ChangeName'] = 'Change the title';
+Dictionary['TestName'] = 'Title';
+Dictionary['TestCode'] = 'Test code';
+Dictionary['TestTime'] = 'Test duration';
+Dictionary['ChangeTime'] = 'Change duration';
+Dictionary['DeletionTest'] = 'Test deletion';
+Dictionary['DeleteTest'] = 'Delete';
+Dictionary['ToAddQuestion'] = 'Add a question';
+Dictionary['ShowAllQuestions'] = 'Show all questions ↓';
+Dictionary['HideAllQuestions'] = 'Hide all questions ↑';
+Dictionary['SaveAndGetBack'] = 'Save and return';
+Dictionary['Question'] = 'Question';
+Dictionary['QuestionType'] = 'Question type';
+Dictionary['CorrectAnswer'] = 'Correct answer';
+Dictionary['ChosenAnswer'] = 'Chosen answer';
+Dictionary['Sent'] = 'Sent';
 function CreateA(link, name){
 	var A = document.createElement('a');
 	A.setAttribute('class', '');

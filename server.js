@@ -16,7 +16,22 @@ Klausimai:
 
 
 */
-
+var Dictionary = {};
+/*Lithuanian
+Dictionary['Home'] = 'Pradžia';
+Dictionary['Test"'] = 'Testas„';
+Dictionary['"'] = '“';
+Dictionary['Results'] = 'Rezultatai';
+Dictionary['Database'] = 'Duomenų bazė';
+Dictionary['The result'] = 'Mokinio ';
+Dictionary['std'] = " rezultatas";*/
+Dictionary['Home'] = 'Home';
+Dictionary['Test"'] = 'Test "';
+Dictionary['"'] = '""';
+Dictionary['Results'] = 'Results';
+Dictionary['Database'] = 'Database';
+Dictionary['The result'] = 'The result of ';
+Dictionary['std'] = "";
 function getPath(where, data){
     var links = {
         1: 'testai',
@@ -28,30 +43,30 @@ function getPath(where, data){
 
     var ret = [];
     if(where == 1){ // testai
-        ret.push({word: "Pradžia", link: links[1]});
+        ret.push({word: Dictionary['Home'], link: links[1]});
     }
     if(where == 2){
         if(testai.visiTestai[data.CurrentTest] == null) return [];
-        ret.push({word: "Pradžia", link: links[1]});
-        ret.push({word: "Testas „" + testai.visiTestai[data.CurrentTest].Name + "“", link: links[2]});
+        ret.push({word: Dictionary['Home'], link: links[1]});
+        ret.push({word: Dictionary['Test"'] + testai.visiTestai[data.CurrentTest].Name + Dictionary['"'], link: links[2]});
     }
     if(where == 3){
         if(testai.visiTestai[data.CurrentTest] == null) return [];
-        ret.push({word: "Pradžia", link: links[1]});
-        ret.push({word: "Testas „" + testai.visiTestai[data.CurrentTest].Name + "“", link: links[2]});
-        ret.push({word: "Rezultatai", link: links[3]});
+        ret.push({word: Dictionary['Home'], link: links[1]});
+        ret.push({word: Dictionary['Test"'] + testai.visiTestai[data.CurrentTest].Name + Dictionary['"'], link: links[2]});
+        ret.push({word: Dictionary['Results'], link: links[3]});
     }
     if(where == 4){
         if(testai.visiTestai[data.CurrentTest] == null) return [];
         if(answers.answers[data.AnswerToCheck].Name == null) return [];
-        ret.push({word: "Pradžia", link: links[1]});
-        ret.push({word: "Testas „" + testai.visiTestai[data.CurrentTest].Name + "“", link: links[2]});
-        ret.push({word: "Rezultatai", link: links[3]});
-        ret.push({word: "Mokinio " + answers.answers[data.AnswerToCheck].Name + " rezultatas", link: links[4]});
+        ret.push({word: Dictionary['Home'], link: links[1]});
+        ret.push({word: Dictionary['Test"'] + testai.visiTestai[data.CurrentTest].Name + Dictionary['"'], link: links[2]});
+        ret.push({word: Dictionary['Results'], link: links[3]});
+        ret.push({word: Dictionary['The result'] + answers.answers[data.AnswerToCheck].Name + Dictionary['std'], link: links[4]});
     }
     if(where == 5){
-        ret.push({word: "Pradžia", link: links[1]});
-        ret.push({word: "Duomenų bazė", link: links[5]});
+        ret.push({word: Dictionary['Home'], link: links[1]});
+        ret.push({word: Dictionary['Database'], link: links[5]});
     }
     return ret;
 }

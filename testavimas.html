@@ -17,15 +17,19 @@
 
     <body>
         <div class="loginHolder" id="PrimaryInputHolder">
-            <div class="UpperHolderLogin"><span class="LoginName">Įveskite savo duomenis</span></div>
+            <!-- <div class="UpperHolderLogin"><span class="LoginName">Įveskite savo duomenis</span></div> -->
+            <div class="UpperHolderLogin"><span class="LoginName">Insert your data</span></div>
             <div class="LowerHolderLogin">
-                <input type="text" id="TestId" class="InputText" placeholder="Kodas"  value=""></input> <br>
-                <input type="text" id="TakerName" class="InputText" placeholder="Vardas" ></input> <br>
+                <!-- <input type="text" id="TestId" class="InputText" placeholder="Kodas"  value=""></input> <br>
+                <input type="text" id="TakerName" class="InputText" placeholder="Vardas" ></input> <br> -->
+                <input type="text" id="TestId" class="InputText" placeholder="Code"  value=""></input> <br>
+                <input type="text" id="TakerName" class="InputText" placeholder="Name" ></input> <br>
                 <input type="submit" value="Pasirinkti" id="SendId" class="SubmitLogin" onclick="SendId()" value="Siųsti" />
             </div>
         </div>
         <div id="TestDataHolder" class="TestDataHolder1" hidden>
-            <div id="Timer" class="Timer">Testas nepradėtas</div>
+            <!-- <div id="Timer" class="Timer">Testas nepradėtas</div> -->
+            <div id="Timer" class="Timer">Not started</div>
             <div id="SelectorHolder" class="SelectorHolder"></div>
             <div id="QuestionHolder" class="QuestionHolder"></div>
             <div id="MetaInfoHolder" class="MetaInfoHolder"></div>

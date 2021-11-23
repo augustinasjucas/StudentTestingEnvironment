@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "socket.io": "*",
+    "http-server": "*",
     "express": "*"
   }
 }
