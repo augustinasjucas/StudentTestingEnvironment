@@ -20,3 +20,9 @@ A student can:
 
 ### Screenshots
 ![](Screenshots/1.png?raw=true "Optional Title")
+![](Screenshots/2.png?raw=true "Optional Title")
+![](Screenshots/3.png?raw=true "Optional Title")
+![](Screenshots/4.png?raw=true "Optional Title")
+![](Screenshots/5.png "Optional Title")
+![](Screenshots/6.png "Optional Title")
+
